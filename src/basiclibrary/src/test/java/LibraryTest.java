@@ -5,8 +5,29 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
+    @Test
+    public void testSomeLibraryMethod() {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+
     }
-}
+
+    @Test  public void testduplicate() {
+        Library classUnderTest = new Library();
+        int[] testtrue = new int[] {1, 4, 7 , 9, 8};
+        int[] testfalse = new int[]{2, 2};
+
+        assertTrue("duplicate should return true if the array contains a duplicate", classUnderTest.someLibraryMethod());
+        assertTrue("duplicate should return true if the array contains  no duplicate", classUnderTest.someLibraryMethod());
+
+    }
+
+    @Test  public void testAverageValues() {
+        Library classUnderTest = new Library();
+        int[] testAverage = new int[]{1, 2, 3,};
+        assertTrue("Average value should return  the average provided  array ", classUnderTest.someLibraryMethod());
+
+    }
+
+
+    }

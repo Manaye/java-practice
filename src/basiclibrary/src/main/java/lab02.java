@@ -50,6 +50,7 @@ public class lab02 {
         return  false;
     }
 
+
     //calculate array average
     public  static float calculateArrayAverage(float arr[]){
         float sum = 0;
