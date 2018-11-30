@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+
 public class linter {
 
     public static void main(String[] args) {
@@ -58,14 +59,36 @@ public class linter {
             for (int j = 0; j < weeklyMonthTemperatures[i].length; j++) {
                 System.out.println(weeklyMonthTemperatures[i][j]);
           h.add(weeklyMonthTemperatures[i][j]);
-
-
-
             }
-        Iterator<String> i = h.iterator();
-        while (i.hasNext())
-            System.out.println(i.next());
+            System.out.println("max: " + max);
+            System.out.println("min: " + max);
+       for (int i = min ; i<max;i++)
+           if (!temp.contains(i)){
+        System.out.println(("never saw temperature:" +i));
+    }
         }
+
+    }
+    public static  String tally(<String> votes){
+        HashSet<Integer> h = new HashSet<>();
+for (String vote : votes){
+    if (tallies.containsKey(vote)){
+        tallies.put(vote,tallies.get(vote) +1);
+
+    }
+    else {
+        tallise.put(vote,1);
+            }
+    int highestVotes = 0;
+    string winner = "";
+    for (String key: tallies.keyset()){
+        if (tallies.get(key)>highestVotes){
+            highestVotes = tallies.get(key);
+            Winner = key;
+        }
+
+    }
+}return Winner + "received the most votes!";
     }
 }
 
